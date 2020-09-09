@@ -1,0 +1,19 @@
+<meta>
+    <!-- ? TR: Günlük Harita Bonusu                                                                           -->
+    <!-- ? Bir gün içerisinde ilk kez giriş yapan oyuncuya (log-in gerekmez) haritada rastgele bir konumda-   -->
+    <!-- ? 24 saatlik periyotlarda hediyeler verir..                                                          -->
+    <!-- ? EN: Daily map bonus                                                                       -->
+    <!-- ? Generates bonus markers random positions on every 24 hours for one player.                -->
+    <info name="dailymapbonus" author="enesbayrktar" description="we ❤ open-source" version="1.0.0" type="misc" />
+    <min_mta_version server="1.5.2"></min_mta_version>
+    <oop>true</oop>
+
+    <script type="shared" src="utils.lua" />
+
+    <script type="server" src="events/log.lua" />
+    <script type="server" src="events/player.lua" />
+
+    <script type="server" src="actions/blip.lua" />
+    <script type="server" src="actions/marker.lua" />
+    <script type="server" src="actions/player.lua" />
+</meta>

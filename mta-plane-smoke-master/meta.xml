@@ -1,0 +1,24 @@
+<meta>
+    <!-- Plane Smoke / Afterburner                                      -->
+    <!-- Uçakların arkasından duman çıkarmasını sağlar.                 -->
+    <!-- Özellikle yardımları için Liberty#5062'e teşekkürler.          -->
+    <!-- Special thanks to Liberty#5062 for applySmoke.lua              -->
+
+    <oop>true</oop>
+    <info name="Shade" author="nybjp" version="2.0.0" type="misc"/>
+    <min_mta_version server="1.5.4-9.11342" client="1.5.4-9.11342" />
+    
+    <script type="shared" src="Class.lua"/>
+    <!-- cThread lua üzerinde sınıf oluşturmamızı sağlar -->
+
+    <script type="shared" src="Shared.lua"/>
+    <!-- Tüm sınıflarda kullanılacak global değişkenleri tanımlar -->
+
+    <script type="client" src="libs/applySmoke.lua"/>
+    <!-- Duman oluşturma yardımcısı -->
+
+    <script type="client" src="containers/SmokeContainer.lua"/>
+    <!-- Oyuncu taraflı duman efektlerinin oluşum fonksiyonları -->
+
+    <file type="client" src="dist/media/smoke.png"/>
+</meta>

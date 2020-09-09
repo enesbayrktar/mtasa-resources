@@ -1,0 +1,16 @@
+<meta>
+    <info author="nybjp" name="Whitelist" version="2.0.0" type="misc"/>
+    <min_mta_version server="1.5.4-9.11413" client="1.5.4-9.11413" />
+    <oop>true</oop>
+
+    <script type="shared" src="Class.lua"/>
+    <script type="shared" src="Shared.lua"/>
+
+    <script type="server" src="services/FileService.lua"/>
+    <script type="server" src="services/Whitelist.lua"/>
+
+    <export function="add" http="true" type="server"/>
+    <export function="remove" http="true" type="server"/>
+    <export function="rollback" http="true" type="server"/>
+    <export function="exists" http="true" type="server"/>
+</meta>

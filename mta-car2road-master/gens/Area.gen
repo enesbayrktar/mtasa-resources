@@ -1,0 +1,76 @@
+Area = Service:new('area')
+
+function Area:register(id, callback)
+	local _id = id or error('Required argument ID got nil')
+	self._assignedID = id;
+	return self
+end
+
+function Area:load(id, path)
+	local _id = self._assignedID or id or error('Required argument ID got nil')
+	local _path = nil;
+
+	if self:cache(_id) then 
+		return self:cache(_id)
+	end
+
+	if self._assignedID then
+		_path = id;
+	else 
+		_path = path or error('Required argument PATH got nil')
+	end
+
+	local _fileString = _path.._id..'.json';
+
+	if File.exists(_fileString) then 
+		self[_id] = {}
+		self._pushData = loadJSON(_fileString)
+	end
+
+	--> v1.0.0
+	--local _path = (path or '')
+
+	--> v1.0.0
+	--if self._idRanges then 
+	--	_path = id;
+	--end
+	--
+	--if type(_id) == 'table' then 
+	--	self._pushData = self._pushData or {}
+	--
+	--	for i = _id[1], _id[2] do 
+	--		if not loadingText then 
+	--			loadingText = guiCreateLabel(0, 0, 120, 50, 'Yükleniyor ('..i..'/ '..tostring(_id[2])..')', false)
+	--		else 
+	--			guiSetText(loadingText, 'Yükleniyor ('..i..'/ '..tostring(_id[2])..')')
+	--		end
+	--
+	--		sleep(500)
+	--
+	--		local _fileString = _path..tostring(i)..'.json';
+	--		if File.exists(_fileString) then 
+	--			table.insert(self._pushData, loadJSON(_fileString))
+	--		end
+	--	end
+	--end
+
+    return self;
+end
+
+function Area:push(id, file, callback)
+    
+    local _id = self[self._assignedID] or self[id] or error('Required argument ID got nil')
+    if _id then
+		self:cache(_id, self._pushData)
+        self._pushData 	   = nil;
+        self._assignedID   = nil;
+    return self:cache(_id)
+    end
+end
+
+function Area:pull(id, callback)
+	
+	local _id = id or error('Required argument ID got nil')
+
+return callback(self, self:register(_id):load('data/node_'):push())
+end

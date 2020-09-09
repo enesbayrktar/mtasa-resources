@@ -1,0 +1,27 @@
+<meta>
+    <!-- Shade                                                          -->
+    <!-- Sunucu grafiklerinin gelişmesini sağlar                        -->
+
+    <oop>true</oop>
+    <info name="Shade" author="Ren712" description="A complex shade pack resource for Multi Theft Auto" version="2.0.0" type="misc"/>
+
+    <script type="client" src="Class.lua"/>
+    <!-- cThread lua üzerinde sınıf oluşturmamızı sağlar -->
+    <script type="client" src="Shared.lua"/>
+    <!-- Tüm sınıflarda kullanılacak global değişkenleri tanımlar -->
+
+    <script type="client" src="containers/ShadeContainer.lua"/>
+    <!-- Grafik sürücülerini kapsar, yükler ve kuralları genişletir -->
+
+
+    <file src="dist/media/cube_env256.dds"/>
+    <file src="dist/media/smallnoise3d.dds"/>
+    <file type="client" src="dist/fx/mta-helper.fx"/>
+    <file type="client" src="dist/fx/light_disable.fx"/>
+    <file type="client" src="dist/fx/water.fx"/>
+    <file type="client" src="dist/fx/primitive3D_ssao.fx"/>
+    <file type="client" src="dist/fx/primitive3D_ssao_dr.fx"/>
+    <file type="client" src="dist/fx/material3D_ssao.fx"/>
+    <file type="client" src="dist/fx/material3D_ssao_dr.fx"/>
+    <file type="client" src="dist/fx/ssao_dr_settings.txt"/>
+</meta>

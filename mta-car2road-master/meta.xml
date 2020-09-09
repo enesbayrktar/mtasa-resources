@@ -1,0 +1,88 @@
+<meta>
+    <!-- Car2road / Anti h2O for vehicles                                   -->
+    <!-- Araçların suya düştüklerinde en yakın yola geri dönmesini sağlar.  -->
+
+    <oop>true</oop>
+    <info name="car2road" author="nybjp" version="1.0.0" type="script"/>
+    <min_mta_version server="1.5.4-9.11342" client="1.5.4-9.11342" />
+
+    <script type="shared" src="Class.lua"/>
+    <!-- cThread lua üzerinde sınıf oluşturmamızı sağlar -->
+
+    <script type="shared" src="Service.lua"/>
+    <!-- Tüm sınıflarda kullanılacak global değişkenleri tanımlar -->
+
+    <script type="shared" src="libs/File.lua"/>
+    <!-- Dosya depolama işlem sınıfı -->
+
+    <script type="client" src="gens/Area.gen"/>
+    <!-- Oyuncu pozisyonlarını algılayan, işleyen fonksiyonları barındırır -->
+
+    <script type="client" src="__construct.lua"/>
+    <!-- Büyüyü başlatır (: -->
+
+    <file type="client" src="data/node_0.json"/>
+    <file type="client" src="data/node_1.json"/>
+    <file type="client" src="data/node_2.json"/>
+    <file type="client" src="data/node_3.json"/>
+    <file type="client" src="data/node_4.json"/>
+    <file type="client" src="data/node_5.json"/>
+    <file type="client" src="data/node_6.json"/>
+    <file type="client" src="data/node_7.json"/>
+    <file type="client" src="data/node_8.json"/>
+    <file type="client" src="data/node_9.json"/>
+    <file type="client" src="data/node_10.json"/>
+    <file type="client" src="data/node_11.json"/>
+    <file type="client" src="data/node_12.json"/>
+    <file type="client" src="data/node_13.json"/>
+    <file type="client" src="data/node_14.json"/>
+    <file type="client" src="data/node_15.json"/>
+    <file type="client" src="data/node_16.json"/>
+    <file type="client" src="data/node_17.json"/>
+    <file type="client" src="data/node_18.json"/>
+    <file type="client" src="data/node_19.json"/>
+    <file type="client" src="data/node_20.json"/>
+    <file type="client" src="data/node_21.json"/>
+    <file type="client" src="data/node_22.json"/>
+    <file type="client" src="data/node_23.json"/>
+    <file type="client" src="data/node_24.json"/>
+    <file type="client" src="data/node_25.json"/>
+    <file type="client" src="data/node_26.json"/>
+    <file type="client" src="data/node_27.json"/>
+    <file type="client" src="data/node_28.json"/>
+    <file type="client" src="data/node_29.json"/>
+    <file type="client" src="data/node_30.json"/>
+    <file type="client" src="data/node_31.json"/>
+    <file type="client" src="data/node_32.json"/>
+    <file type="client" src="data/node_33.json"/>
+    <file type="client" src="data/node_34.json"/>
+    <file type="client" src="data/node_35.json"/>
+    <file type="client" src="data/node_36.json"/>
+    <file type="client" src="data/node_37.json"/>
+    <file type="client" src="data/node_38.json"/>
+    <file type="client" src="data/node_39.json"/>
+    <file type="client" src="data/node_40.json"/>
+    <file type="client" src="data/node_41.json"/>
+    <file type="client" src="data/node_42.json"/>
+    <file type="client" src="data/node_43.json"/>
+    <file type="client" src="data/node_44.json"/>
+    <file type="client" src="data/node_45.json"/>
+    <file type="client" src="data/node_46.json"/>
+    <file type="client" src="data/node_47.json"/>
+    <file type="client" src="data/node_48.json"/>
+    <file type="client" src="data/node_49.json"/>
+    <file type="client" src="data/node_50.json"/>
+    <file type="client" src="data/node_51.json"/>
+    <file type="client" src="data/node_52.json"/>
+    <file type="client" src="data/node_53.json"/>
+    <file type="client" src="data/node_54.json"/>
+    <file type="client" src="data/node_55.json"/>
+    <file type="client" src="data/node_56.json"/>
+    <file type="client" src="data/node_57.json"/>
+    <file type="client" src="data/node_58.json"/>
+    <file type="client" src="data/node_59.json"/>
+    <file type="client" src="data/node_60.json"/>
+    <file type="client" src="data/node_61.json"/>
+    <file type="client" src="data/node_62.json"/>
+    <file type="client" src="data/node_63.json"/>
+</meta>

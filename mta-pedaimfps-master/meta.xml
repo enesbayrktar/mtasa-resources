@@ -1,0 +1,12 @@
+<meta>
+    <!-- Ped Aim FPS Controller                                                 -->
+    <!-- Syncronize player fps on aiming for not bugging for lower fps players  -->
+    <!-- TR: Oyuncuların nişan alırkenki fps değerlerini eşitler                -->
+
+    <oop>true</oop>
+    <info name="pedaimfps" author="nybjp" version="1.0.0" type="script"/>
+    <min_mta_version server="1.5.4-9.11342" client="1.5.4-9.11342" />
+
+    <script type="client" src="Aim.gen"/>
+
+</meta>

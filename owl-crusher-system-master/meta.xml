@@ -1,0 +1,21 @@
+<meta>
+    <info author="nybjp" name="Crusher System" version="2.0.0" type="misc"/>
+    <min_mta_version server="1.5.4-9.11413" client="1.5.4-9.11413" />
+    <oop>true</oop>
+
+    <script type="shared" src="Class.lua"/>
+    <script type="shared" src="Shared.lua"/>
+    
+    <script type="client" src="services/CharacterService.lua"/>
+
+    <script type="server" src="services/FileService.lua"/>
+    <script type="shared" src="services/CoordsService.lua"/>
+    <script type="server" src="services/CrusherService.lua"/>
+
+    <file src="models/sweet.txd"/>
+    <file src="models/sweet.dff"/>
+    <file src="models/gungrl3.txd"/>
+    <file src="models/gungrl3.dff"/>
+    <file src="models/broom.txd"/>
+    <file src="models/broom.dff"/>
+</meta>

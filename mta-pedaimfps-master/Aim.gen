@@ -1,0 +1,51 @@
+addEventHandler('onClientResourceStart', resourceRoot,
+function()
+
+    AIMFPS = 40
+    MAXFPS = 100
+
+    --> https://wiki.multitheftauto.com/wiki/IsPedAiming
+    function isPedAiming (thePedToCheck)
+        if isElement(thePedToCheck) then
+            if getElementType(thePedToCheck) == "player" or getElementType(thePedToCheck) == "ped" then
+                if getPedTask(thePedToCheck, "secondary", 0) == "TASK_SIMPLE_USE_GUN" or isPedDoingGangDriveby(thePedToCheck) then
+                    return true
+                end
+            end
+        end
+        return false
+    end
+
+    bindKey('mouse2', 'down',
+    function()
+        
+        if localPlayer.aim then 
+            return 
+        end
+
+        localPlayer.aim = Timer(
+        function()
+            if isPedAiming(localPlayer) then 
+                setFPSLimit(AIMFPS)
+            else 
+                setFPSLimit(MAXFPS)
+            end   
+        end
+        ,500, 0)
+    end)
+
+    bindKey('mouse2', 'up', 
+    function()
+
+        if not localPlayer.aim then 
+            return 
+        end
+
+        if not isTimer(localPlayer.aim) then 
+            return 
+        end
+
+        killTimer(localPlayer.aim)
+        setFPSLimit(MAXFPS)
+    end)
+end)
