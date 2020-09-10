@@ -18,7 +18,7 @@ function givePlayerBonus(hitElement)
   timedPlayers[getPlayerSerial(hitElement)] = {
     hitElement,
     os.time(),
-    os.time() + 86.400
+    os.time() + 86400
   }
   if type(dump[hitElement]) == 'table' then
     for i=1, #dump[hitElement] do
